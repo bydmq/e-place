@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Place.space - Сервис поиска мест для проведения мероприятий</title>
+    <link rel="stylesheet" href="./css/normalize.css ">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <div class="header__location header-location">
+                    <div class="header-location__text">Местоположение:</div>
+                    <a class="header-location__link" href="#">Барнаул</a>
+                </div>
+                <ul class="header__menu header-menu">
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="#">О сервисе</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="#">Партнерам</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="header-menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__container">
+                <a class="header__logo logo" href="#">
+                    E-PLACE.SPACE
+                </a>
+                <form class="header__search search" action="" method="POST">
+                    <input class="search__input" type="text" name="" id="" placeholder="Что будем искать?">
+                    <input class="search__submit" type="submit" value="Найти">
+                </form>
+                <div class="header__box">
+                    <button class="header__btn">Добавить площадку</button>
+                    <div class="header__user header-user">
+                        <div class="header-user__profile">
+                            <img class="header-user__img" src="./image/user.png" alt="Фотография пользователя">
+                            <span onclick="DropDown()" class="header-user__name">Дмитрий</span>
+                        </div>
+                        <ul id="menu" class="header-user__menu">
+                            <li class="header-user__item">
+                                <a class="header-user__link" href="#">Мой профиль</a>
+                            </li>
+                            <li class="header-user__item">
+                                <a class="header-user__link" href="#">Выйти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Блог</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Категории</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Статьи</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Компании</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li class="breadcrumb__item">
+                    <a class="breadcrumb__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumb__item">
+                    <a class="breadcrumb__link" href="#">Лофт</a>
+                </li>
+                <li class="breadcrumb__item">
+                    <a class="breadcrumb__link active-link" href="#">Лофт "EventsBase"</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="./js/common.js"></script>
+</body>
+</html>
